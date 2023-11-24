@@ -1,0 +1,26 @@
+<!-- editar-producto.component.html -->
+<div class="p-grid p-fluid">
+    <div class="p-col-12">
+      <h1>Editar Producto</h1>
+    </div>
+    <div class="p-col-12">
+      <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+          <label for="descripcion">Descripción</label>
+          <input id="descripcion" type="text" pInputText [(ngModel)]="producto.descripcion">
+        </div>
+        <div class="p-col-12 p-md-4">
+          <label for="precio">Precio</label>
+          <input id="precio" type="number" pInputText [(ngModel)]="producto.precio">
+        </div>
+        <div class="p-col-12 p-md-4">
+          <label for="stock">Stock</label>
+          <input id="stock" type="number" pInputText [(ngModel)]="producto.stock">
+        </div>
+        <div class="p-col-12">
+          <button pButton type="button" label="Guardar Cambios" (click)="guardarCambios()" class="p-button-success"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,19 @@
+/* clientes.component.css */
+.p-table {
+    width: 100%;
+    background-color: #f4f4f4;
+  }
+  
+  .p-datatable {
+    background-color: #fff;
+  }
+  
+  .p-datatable .p-header {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .p-datatable .p-table th {
+    text-align: center;
+  }
+  

@@ -1,0 +1,25 @@
+<!-- editar-distribucion.component.html -->
+<div class="p-grid p-fluid">
+    <div class="p-col-12">
+      <h1>Editar Distribución</h1>
+    </div>
+    <div class="p-col-12">
+      <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+          <label for="producto">Producto</label>
+          <input id="producto" type="text" pInputText [(ngModel)]="distribucion.producto.descripcion" disabled>
+        </div>
+        <div class="p-col-12 p-md-4">
+          <label for="proveedor">Proveedor</label>
+          <input id="proveedor" type="text" pInputText [(ngModel)]="distribucion.proveedor.nombre" disabled>
+        </div>
+        <div class="p-col-12 p-md-4">
+          <label for="cantidad">Cantidad</label>
+          <input id="cantidad" type="number" pInputText [(ngModel)]="distribucion.cantidad_producto">
+        </div>
+        <div class="p-col-12">
+          <button pButton type="button" label="Guardar Cambios" (click)="guardarCambios()" class="p-button-success"></button>
+        </div>
+      </div>
+    </div>
+  </div>  

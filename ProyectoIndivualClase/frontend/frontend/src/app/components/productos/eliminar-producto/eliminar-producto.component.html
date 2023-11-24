@@ -1,0 +1,18 @@
+<!-- eliminar-producto.component.html -->
+<div class="p-grid p-fluid">
+    <div class="p-col-12">
+      <h1>Eliminar Producto</h1>
+    </div>
+    <div class="p-col-12">
+      <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+          <label for="productoId">ID del Producto</label>
+          <input id="productoId" type="text" pInputText [(ngModel)]="productoId">
+        </div>
+        <div class="p-col-12">
+          <button pButton type="button" label="Eliminar Producto" (click)="eliminarProducto()" class="p-button-danger"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

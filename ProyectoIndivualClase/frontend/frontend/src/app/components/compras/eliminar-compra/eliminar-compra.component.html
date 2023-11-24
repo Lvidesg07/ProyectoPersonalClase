@@ -1,0 +1,23 @@
+<!-- eliminar-compra.component.html -->
+<div class="p-fluid p-formgrid p-grid">
+    <div class="p-field p-col-12">
+      <label for="buscarId">Buscar Compra por ID</label>
+      <input id="buscarId" type="text" pInputText [(ngModel)]="idCompraBusqueda">
+      <button pButton type="button" label="Buscar" (click)="buscarCompraPorId()"></button>
+    </div>
+    <div class="p-field p-col-12" *ngIf="compraEncontrada">
+      <label for="fecha">Fecha</label>
+      <input id="fecha" type="text" pInputText [(ngModel)]="compra.fecha" disabled>
+    </div>
+    <div class="p-field p-col-12" *ngIf="compraEncontrada">
+      <label for="cliente">Cliente</label>
+      <input id="cliente" type="text" pInputText [(ngModel)]="compra.cliente.nombre" disabled>
+    </div>
+    <div class="p-field p-col-12" *ngIf="compraEncontrada">
+      <label for="producto">Producto</label>
+      <input id="producto" type="text" pInputText [(ngModel)]="compra.producto.nombre" disabled>
+    </div>
+    <div class="p-field p-col-12" *ngIf="compraEncontrada">
+      <button pButton type="button" label="Eliminar Compra" (click)="eliminarCompra()" class="p-button-danger"></button>
+    </div>
+  </div>

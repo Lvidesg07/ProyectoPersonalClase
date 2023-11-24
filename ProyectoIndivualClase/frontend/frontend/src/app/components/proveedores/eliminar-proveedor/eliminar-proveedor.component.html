@@ -1,0 +1,17 @@
+<!-- eliminar-proveedor.component.html -->
+<div class="p-grid p-fluid">
+    <div class="p-col-12">
+      <h1>Eliminar Proveedor</h1>
+    </div>
+    <div class="p-col-12">
+      <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+          <label for="proveedorId">ID del Proveedor</label>
+          <input id="proveedorId" type="text" pInputText [(ngModel)]="proveedorId">
+        </div>
+        <div class="p-col-12">
+          <button pButton type="button" label="Eliminar Proveedor" (click)="eliminarProveedor()" class="p-button-danger"></button>
+        </div>
+      </div>
+    </div>
+  </div>  

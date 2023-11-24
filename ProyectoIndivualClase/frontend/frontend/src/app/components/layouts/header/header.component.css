@@ -1,0 +1,46 @@
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(88, 19, 179);
+    color: #3d3c3c;
+    height: 100%;
+  }
+  
+  .title{
+    flex-grow: 2;
+    text-align: center;
+    width: 100%;
+  }
+
+  .logo {
+    flex-grow: 1;
+    display: inline-block;/* Muestra el div como un bloque en línea */
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40%; /* Ancho automático para ajustarse al contenido */
+    height: 40%; /* Altura automática para ajustarse al contenido */
+    margin-left: 10%;
+  }
+
+  .menu {
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 10%;
+    padding: 0 10px;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: inherit; /* Restablece el color del texto al valor predeterminado */ /* Elimina la subrayado (u otro estilo de decoración del texto) */
+  }

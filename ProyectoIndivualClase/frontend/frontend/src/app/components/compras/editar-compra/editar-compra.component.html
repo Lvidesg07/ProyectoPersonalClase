@@ -1,0 +1,23 @@
+<!-- editar-compra.component.html -->
+<div class="p-fluid p-formgrid p-grid">
+  <div class="p-field p-col-12">
+    <label for="buscarId">Buscar Compra por ID</label>
+    <input id="buscarId" type="text" pInputText [(ngModel)]="idCompraBusqueda">
+    <button pButton type="button" label="Buscar" (click)="buscarCompraPorId()"></button>
+  </div>
+  <div class="p-field p-col-12" *ngIf="compraEncontrada">
+    <label for="fecha">Fecha</label>
+    <input id="fecha" type="text" pInputText [(ngModel)]="compra.fecha">
+  </div>
+  <div class="p-field p-col-12" *ngIf="compraEncontrada">
+    <label for="cliente">Cliente</label>
+    <p-dropdown [options]="clientes" [(ngModel)]="compra.cliente" optionLabel="nombre" optionValue="id"></p-dropdown>
+  </div>
+  <div class="p-field p-col-12" *ngIf="compraEncontrada">
+    <label for="producto">Producto</label>
+    <p-dropdown [options]="productos" [(ngModel)]="compra.producto" optionLabel="nombre" optionValue="id"></p-dropdown>
+  </div>
+  <div class="p-field p-col-12" *ngIf="compraEncontrada">
+    <button pButton type="button" label="Guardar Cambios" (click)="guardarCambiosCompra()" class="p-button-success"></button>
+  </div>
+</div>

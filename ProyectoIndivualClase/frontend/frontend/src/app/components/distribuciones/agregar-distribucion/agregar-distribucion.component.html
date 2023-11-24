@@ -1,0 +1,25 @@
+<!-- agregar-distribucion.component.html -->
+<div class="p-grid p-fluid">
+    <div class="p-col-12">
+      <h1>Agregar Distribución</h1>
+    </div>
+    <div class="p-col-12">
+      <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+          <label for="producto">Producto</label>
+          <p-dropdown [options]="productos" [(ngModel)]="selectedProducto" optionLabel="descripcion"></p-dropdown>
+        </div>
+        <div class="p-col-12 p-md-4">
+          <label for="proveedor">Proveedor</label>
+          <p-dropdown [options]="proveedores" [(ngModel)]="selectedProveedor" optionLabel="nombre"></p-dropdown>
+        </div>
+        <div class="p-col-12 p-md-4">
+          <label for="cantidad">Cantidad</label>
+          <input id="cantidad" type="number" pInputText [(ngModel)]="cantidad">
+        </div>
+        <div class="p-col-12">
+          <button pButton type="button" label="Agregar Distribución" (click)="agregarDistribucion()" class="p-button-success"></button>
+        </div>
+      </div>
+    </div>
+  </div>  

@@ -1,0 +1,27 @@
+<!-- eliminar-cliente.component.html -->
+<div class="p-fluid p-formgrid p-grid">
+  <div class="p-field p-col-12">
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon">
+        <i class="pi pi-search"></i>
+      </span>
+      <input type="text" pInputText placeholder="ID del Cliente" [(ngModel)]="idCliente">
+      <button pButton type="button" label="Buscar" icon="pi pi-search" (click)="buscarClientePorId()"></button>
+    </div>
+  </div>
+
+  <div class="p-field p-col-12">
+    <button pButton type="button" label="Eliminar Cliente" icon="pi pi-trash" class="p-button-danger" (click)="mostrarDialogoEliminar()"></button>
+
+    <div *ngIf="mostrarConfirmacion" class="confirmacion-dialog">
+      <div class="confirmacion-contenido">
+        <div class="confirmacion-titulo">Confirmar Eliminación</div>
+        <div class="confirmacion-mensaje">¿Estás seguro de que deseas eliminar a {{ cliente.nombre }} {{ cliente.apellidos }}?</div>
+        <div class="confirmacion-botones">
+          <button pButton type="button" label="Sí" (click)="eliminarCliente()" class="p-button-danger"></button>
+          <button pButton type="button" label="No" (click)="ocultarDialogoEliminar()" class="p-button-secondary"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<!-- eliminar-distribucion.component.html -->
+<div class="p-grid p-fluid">
+    <div class="p-col-12">
+      <h1>Eliminar Distribución</h1>
+    </div>
+    <div class="p-col-12">
+      <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+          <label for="distribucionId">ID de la Distribución</label>
+          <input id="distribucionId" type="text" pInputText [(ngModel)]="distribucionId">
+        </div>
+        <div class="p-col-12">
+          <button pButton type="button" label="Eliminar Distribución" (click)="eliminarDistribucion()" class="p-button-danger"></button>
+        </div>
+      </div>
+    </div>
+  </div>  

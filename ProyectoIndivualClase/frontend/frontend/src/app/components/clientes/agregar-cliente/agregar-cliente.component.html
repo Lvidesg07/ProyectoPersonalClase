@@ -1,0 +1,23 @@
+<!-- agregar-cliente.component.html -->
+<div class="p-fluid p-formgrid p-grid">
+    <div class="p-field p-col-12 p-md-6">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" pInputText [(ngModel)]="nuevoCliente.nombre">
+    </div>
+    <div class="p-field p-col-12 p-md-6">
+      <label for="apellidos">Apellidos</label>
+      <input id="apellidos" type="text" pInputText [(ngModel)]="nuevoCliente.apellidos">
+    </div>
+    <div class="p-field p-col-12 p-md-6">
+      <label for="direccion">Dirección</label>
+      <input id="direccion" type="text" pInputText [(ngModel)]="nuevoCliente.direccion">
+    </div>
+    <div class="p-field p-col-12 p-md-6">
+      <label for="telefono">Teléfono</label>
+      <input id="telefono" type="text" pInputText [(ngModel)]="nuevoCliente.telefono">
+    </div>
+    <div class="p-field p-col-12">
+      <button pButton type="button" label="Agregar Cliente" (click)="agregarCliente()" class="p-button-success"></button>
+    </div>
+  </div>
+  

@@ -1,0 +1,17 @@
+/* editar-cliente.component.css */
+.p-formgrid {
+    background-color: #b6adad;
+    padding: 20px;
+    border: 1px solid #b6adad;
+    border-radius: 5px;
+  }
+  
+  .p-field {
+    margin-bottom: 20px;
+  }
+  
+  .p-button-success {
+    background-color: #00ff3c;
+    color: #b6adad;
+  }
+  

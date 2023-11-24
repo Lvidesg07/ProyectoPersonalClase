@@ -1,0 +1,23 @@
+/* agregar-compra.component.css */
+.p-formgrid {
+    background-color: #b6adad;
+    padding: 20px;
+    border: 1px solid #b6adad;
+    border-radius: 5px;
+  }
+  
+  .p-field {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para etiquetas de los campos */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Estilo para el botón de "Agregar Compra" */
+  .p-button-success {
+    background-color: rgb(255, 0, 64);
+    color: #b6adad;
+  }
+  

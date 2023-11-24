@@ -1,0 +1,15 @@
+/* editar-distribucion.component.css */
+.p-grid {
+    padding: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  /* Estilo para el botón de "Guardar Cambios" */
+  .p-button-success {
+    background-color: #00ff3c;
+    color: #b6adad;
+  }
+  

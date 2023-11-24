@@ -1,0 +1,19 @@
+<!-- agregar-compra.component.html -->
+<div class="p-fluid p-formgrid p-grid">
+    <div class="p-field p-col-12">
+      <label for="fecha">Fecha</label>
+      <input id="fecha" type="text" pInputText [(ngModel)]="nuevaCompra.fecha">
+    </div>
+    <div class="p-field p-col-12">
+      <label for="cliente">Cliente</label>
+      <p-dropdown [options]="clientes" [(ngModel)]="nuevaCompra.cliente" optionLabel="nombre" optionValue="id"></p-dropdown>
+    </div>
+    <div class="p-field p-col-12">
+      <label for="producto">Producto</label>
+      <p-dropdown [options]="productos" [(ngModel)]="nuevaCompra.producto" optionLabel="nombre" optionValue="id"></p-dropdown>
+    </div>
+    <div class="p-field p-col-12">
+      <button pButton type="button" label="Agregar Compra" (click)="agregarCompra()" class="p-button-success"></button>
+    </div>
+  </div>
+  
